@@ -249,12 +249,9 @@ window.addEventListener("keypress", (event) => {
 
   console.log(div[nextPosY * 13 + nextPosX]);
 
-  if (
-    div[nextPosY * 13 + nextPosX].className == "paths" ||
-    div[nextPosY * 13 + nextPosX].className == "pathed"
-  ) {
+  if (div[nextPosY * 13 + nextPosX].className == "paths") {
     document.querySelectorAll("div")[positionY * 13 + positionX].className =
-      "pathed";
+      "paths";
     positionY = nextPosY;
     positionX = nextPosX;
     document.querySelectorAll("div")[positionY * 13 + positionX].className =
